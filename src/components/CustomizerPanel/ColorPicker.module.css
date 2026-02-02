@@ -1,0 +1,37 @@
+.container {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.swatch {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.swatch:hover {
+  transform: scale(1.1);
+  border-color: #999;
+}
+
+.swatch.active {
+  border-color: #0066cc;
+  border-width: 3px;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
