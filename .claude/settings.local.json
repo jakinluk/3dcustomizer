@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(npm install)",
+      "WebSearch",
+      "Bash(npx tsc:*)",
+      "WebFetch(domain:sketchfab.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "Bash(xxd:*)",
+      "mcp__plugin_oh-my-claudecode_omc-tools__lsp_diagnostics",
+      "mcp__plugin_oh-my-claudecode_omc-tools__lsp_diagnostics_directory",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash([ -d \"/Users/jakinluk/workspace/priv/3dcustomizer\" ])",
+      "Bash(blender:*)",
+      "Bash(/Applications/Blender.app/Contents/MacOS/Blender:*)",
+      "Bash(npx gltf-transform inspect public/models/shirt-zones.glb)",
+      "Bash(node /Users/jakinluk/workspace/priv/3dcustomizer/scripts/inspect-glb.cjs:*)",
+      "Bash(lsof:*)",
+      "Bash(npm run dev)",
+      "Bash(node scripts/test-app.js:*)",
+      "Bash(tee:*)",
+      "Bash(node scripts/test-color-zones.js:*)",
+      "Bash(node scripts/test-color-zones.mjs:*)",
+      "Bash(node scripts/quick-screenshot.mjs:*)",
+      "Bash(node scripts/test-all-angles.mjs:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  },
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "blender": {
+      "command": "uvx",
+      "args": [
+        "blender-mcp"
+      ]
+    }
+  }
+}
